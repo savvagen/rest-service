@@ -35,8 +35,7 @@ public class UserController {
 
 
 
-
-    // JAKSON
+    // JAKSON ANNOTATIONS
     @RequestMapping(value = "/testUser/{id}", method = RequestMethod.GET)
     public TestUser getTestUser(@PathVariable(value = "id") Integer id){
         TestUser user = new TestUser(id, "Savva", "Genchevskiy", "test@gmail.com");
