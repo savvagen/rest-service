@@ -6,6 +6,8 @@ import org.springframework.context.annotation.Configuration;
 import com.google.common.base.Predicate;
 
 import springfox.documentation.builders.ApiInfoBuilder;
+import springfox.documentation.builders.PathSelectors;
+import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
@@ -16,6 +18,16 @@ import static com.google.common.base.Predicates.or;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
+
+    /*@Bean
+    public Docket api() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .select()
+                .apis(RequestHandlerSelectors.any())
+                .paths(PathSelectors.any())
+                .build();
+    }*/
+
 
     @Bean
     public Docket postsApi() {
@@ -44,6 +56,40 @@ public class SwaggerConfig {
                 .contact("genchevskiy.gepur@gmail.com").license("JavaInUse License")
                 .licenseUrl("javainuse@gmail.com").version("1.0").build();
     }
+
+
+
+
+
+
+
+    /*@Bean
+    public Docket api() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("com.example.controller"))
+                .paths(PathSelectors.ant("/foos/*"))
+                .build()
+                .apiInfo(apiInfo());
+    }
+
+    private ApiInfo apiInfo() {
+        ApiInfo apiInfo = new ApiInfo(
+                "My REST API",
+                "Some custom description of API.",
+                "API TOS",
+                "Terms of service",
+                "myeaddress@company.com",
+                "License of API",
+                "API license URL");
+        return apiInfo;
+    }*/
+
+
+
+
+
+
 
 
 }
