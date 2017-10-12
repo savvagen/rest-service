@@ -31,9 +31,11 @@ public class Application {
 
 
 
-    //This is for running some request to server after starting of the application;
 
-    /*@Bean
+
+    /*//This is for running some request to server after starting of the application;
+
+    @Bean
     public RestTemplate restTemplate(RestTemplateBuilder builder){
         return builder.build();
     }

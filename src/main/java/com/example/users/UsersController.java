@@ -60,7 +60,7 @@ public class UsersController {
 
 
     @GetMapping(path="/all")
-    @ApiOperation(value = "Gets all customers", notes="Gets customers from DB",nickname = "getAllUsers")
+    @ApiOperation(value = "Gets all customers", notes="Gets customers from DB", nickname = "getAllUsers")
     public @ResponseBody Iterable<Users> getAllUsers() {
         // This returns a JSON or XML with the users
         return usersRepository.findAll();

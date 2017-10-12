@@ -4,7 +4,7 @@ package com.example;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-import com.example.Objects.Greeting;
+import com.example.models.Greeting;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;

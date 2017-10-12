@@ -1,4 +1,4 @@
-package com.example.Objects;
+package com.example.models;
 
 public class User {
 

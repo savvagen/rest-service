@@ -1,4 +1,4 @@
-package com.example;
+package com.example.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -46,7 +46,12 @@ public class SwaggerConfig {
                 regex("/user"),
                 regex("/user.*"),
                 regex("/testUser.*"),
-                regex("/testUser/status.*"));
+                regex("/testUser/status.*"),
+                regex("/customers.*"),
+                regex("/customers/add.*"),
+                regex("/customers/register.*"),
+                regex("/jobs.*"),
+                regex("customers/remove.*"));
     }
 
     private ApiInfo apiInfo() {

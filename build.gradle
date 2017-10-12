@@ -50,6 +50,10 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile('org.springframework.boot:spring-boot-starter-test')
     providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
+    //Scurity
+    /*compile group: 'org.springframework.security', name: 'spring-security-web', version: '4.2.3.RELEASE'
+    testCompile group: 'org.springframework.security', name: 'spring-security-test', version: '4.2.3.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-config', version: '4.2.3.RELEASE'*/
 
     //Swagger
     compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'

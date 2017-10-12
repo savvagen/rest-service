@@ -1,15 +1,13 @@
 package com.example;
 
 
-import com.example.Objects.User;
-import com.example.jakson.Status;
-import com.example.jakson.TestUser;
+import com.example.models.User;
+import com.example.models.Status;
+import com.example.models.TestUser;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.websocket.server.PathParam;
 
 @RestController
 public class UserController {

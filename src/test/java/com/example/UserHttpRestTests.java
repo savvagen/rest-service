@@ -2,7 +2,7 @@ package com.example;
 
 
 
-import com.example.jakson.TestUser;
+import com.example.models.TestUser;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
