@@ -14,7 +14,7 @@ public class JacksonTests {
 
 
 
-    @Test
+    /*@Test
     public void getUser(){
         RestTemplate restTemplate = new RestTemplate();
         TestUser user = restTemplate.getForObject("http://localhost:8080/testUser/1", TestUser.class);
@@ -38,7 +38,7 @@ public class JacksonTests {
         assertEquals(status.getStatus(), "exist");
         assertEquals(status.getValue().getFirstName(), "Savva");
 
-    }
+    }*/
 
 
 

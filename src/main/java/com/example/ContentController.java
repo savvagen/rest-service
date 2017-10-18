@@ -19,6 +19,12 @@ public class ContentController {
         return "greeting";
     }
 
+    @GetMapping("/hello")
+    public String hello(){
+        return "hello";
+    }
+
+
 
 
     //HTML
